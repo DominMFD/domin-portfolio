@@ -1,0 +1,53 @@
+// Reset básico
+
+// Box sizing para incluir padding e border no tamanho total do elemento
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  // Remover margens e preenchimento padrão
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, figure, hr {
+    margin: 0;
+    padding: 0;
+  }
+  
+  // Estilos padrão para o corpo
+  body {
+    background-image: url('../../public/MainBackground.jpg');
+    background-color: #8070a7;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-blend-mode: multiply;
+    line-height: 1.6;
+  }
+  
+  // Listas sem estilos
+  ul, ol {
+    list-style: none;
+  }
+  
+  // Hiperlinks sem decoração padrão
+  a {
+    text-decoration: none;
+  }
+  
+  // Elementos de formulário sem estilos
+  button, input, select, textarea {
+    margin: 0;
+  }
+  
+  // Reestabelecer padrões para elementos incorporados
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  // Adicionar um estilo mínimo à seleção de texto
+  ::selection {
+    background-color: #4d90fe;
+    color: #fff;
+  }
