@@ -20,5 +20,27 @@
 
     .description__container {
         width: 50%;
+        color: #FFF;
+        height: max-content;
+        background-color: #ffffff3f;
+        border-radius: 30px;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        
+        button {
+            width: 30%;
+            background-color: #b42fc0;
+            border: none;
+            padding: 4px;
+        }
+
+        .icons__container {
+            width: 40px;
+            object-fit: cover;
+        }
     }
+
 }
