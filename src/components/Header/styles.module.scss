@@ -16,16 +16,19 @@
 
         li, a {
             color: #FFF;
-            font-weight: 300;
+            font-weight: 500;
             font-size: 1.2rem;
             letter-spacing: 1.2px;
             transition: transform 0.3s ease-in-out, font-weight 0.2s ease-in-out;
 
             &:hover {
                 transform: scale(1.2);
-                font-weight: 600;
-                color: #aa99c0;
+                color: #ae00ff;
+                text-shadow: 1px 1px 10px #ae00ff;
+            }
 
+            @media (min-width: 580px) and (max-width: 920px) {
+                font-size: 1rem;
             }
         }
     }

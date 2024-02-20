@@ -3,25 +3,23 @@
 import * as React from 'react'
 import styles from './styles.module.scss';
 import { Roboto_Mono } from "next/font/google";
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { AppContext } from '../AppContext/AppContext';
+import HeaderDropdown from '../HeaderDropdown';
 
 const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export default function Header() {
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+ const {windowWidth} = useContext(AppContext)
 
-    useEffect(() => {
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      };
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
+    if (windowWidth < 580) {
+      return (
+        <div className={roboto.className}>
+          <HeaderDropdown />
+        </div>
+      )
+    }
 
     return (
         <div className={roboto.className}>
