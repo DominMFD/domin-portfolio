@@ -19,7 +19,6 @@
 
 .open {
     width: 300px;
-    height: 400px;
     padding: 10px;
     border-radius: 10px;
     background-color: #9c68b425;
@@ -40,22 +39,34 @@
 
     .navegation {
         display: flex;
+        margin-top: 5px;
+        padding: 5px;
         flex-direction: column;
         justify-content: space-around;
-        align-items: flex-start;
+        align-items: center;
+        gap: 10px;
 
-        li, a {
-            color: #FFF;
-            font-weight: 500;
-            font-size: 1.2rem;
-            letter-spacing: 1.2px;
-            transition: transform 0.3s ease-in-out, font-weight 0.2s ease-in-out;
+        li {
+            width: 80%;
+            border-bottom: 1px solid #9c68b4a1;
+            text-align: center;
 
-            &:hover {
-                transform: scale(1.2);
-                color: #ae00ff;
-                text-shadow: 1px 1px 10px #ae00ff;
+            a {
+            
+                color: #FFF;
+                font-weight: 500;
+                font-size: 1.2rem;
+                letter-spacing: 1.2px;
+                transition: transform 0.3s ease-in-out, font-weight 0.2s ease-in-out;
+    
+                &:hover {
+                    transform: scale(1.2);
+                    color: #ae00ff;
+                    text-shadow: 1px 1px 10px #ae00ff;
+                }
             }
         }
+
+         
     }
 }

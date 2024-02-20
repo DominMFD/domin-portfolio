@@ -1,15 +1,22 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.scss';
 import { FiAlignJustify, FiPlus } from "react-icons/fi"
 
 export default function HeaderDropdown() {
 
-    const [isOpen, setIsOpen] = useState<boolean>(true)
-    
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+
+
+    const handleHeadler = () => {
+      setIsOpen(!isOpen)
+    }
+  
     
     return isOpen ? (
       <div className={styles.open}>
-        <div className={styles.icon}>
+        <div 
+        className={styles.icon}
+        onClick={handleHeadler}>
           <FiPlus color="#9c68b4" size="35px" style={{ rotate: "45deg" }} />
         </div>
         <nav>
@@ -30,7 +37,9 @@ export default function HeaderDropdown() {
         </nav>
       </div>
     ) : (
-      <div className={styles.closed}>
+      <div
+      className={styles.closed}
+      onClick={handleHeadler}>
         <FiAlignJustify color="#9c68b4" size="35px" />
       </div>
     );
