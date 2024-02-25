@@ -7,13 +7,33 @@
     .image__container {
         display: flex;
         width: 100%;
-        object-fit: scale-down;
         align-items: center;
         justify-content: center;
+        transform: translate(-10%, -10%) scale(1) rotate(-10deg);
+        animation: navegate 5s 6s infinite ease-in-out alternate;
 
         .image {
-            width: 380px;
+            width: auto;
+            animation: growRotate 6s ease-in-out;
         }
     }
 
+}
+
+@keyframes growRotate {
+    from {
+      transform: translate(-50%, -50%) scale(0) rotate(-720deg);
+    }
+    to {
+      transform: translate(-10%, -10%) scale(.9) rotate(-10deg);
+    }
+}
+
+@keyframes navegate {
+    from {
+        transform: translate(-10%, -10%) scale(1) rotate(-10deg);
+    }
+    to {
+        transform: translate(10%, -10%) scale(.9) rotate(10deg);
+    }
 }
