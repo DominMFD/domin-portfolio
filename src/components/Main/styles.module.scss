@@ -4,17 +4,35 @@
     margin: 170px auto 0 auto;
     display: flex;
 
+    @media (max-width: 580px) {
+        flex-wrap: wrap;
+    }
+
     .image__container {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: center;
-        transform: translate(-10%, -10%) scale(1) rotate(-10deg);
-        animation: navegate 5s 6s infinite ease-in-out alternate;
+
+        @media (max-width: 580px) {
+            width: 50%;
+            align-self: center;
+            justify-self: center;
+            margin: auto;
+        }
+        @media (min-width: 580px) {
+            transform: translate(-10%, -10%) scale(1) rotate(-10deg);
+            animation: navegate 5s 6s infinite ease-in-out alternate;
+        }
+
+
 
         .image {
             width: auto;
-            animation: growRotate 6s ease-in-out;
+
+            @media (min-width: 580px) {
+                animation: growRotate 6s ease-in-out;
+            }
         }
     }
 
