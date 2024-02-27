@@ -1,8 +1,24 @@
 .container {
-    width: 90%;
-    max-width: 1400px;
-    margin: 170px auto 0 auto;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../public/MainBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.6;
+
+    .content {
+        width: 90%;
+        max-width: 1400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 1400px) {
+            margin-top: 200px;
+        }
+    }
 
     @media (max-width: 580px) {
         flex-wrap: wrap;
@@ -29,6 +45,7 @@
 
         .image {
             width: auto;
+
 
             @media (min-width: 580px) {
                 animation: growRotate 6s ease-in-out;
