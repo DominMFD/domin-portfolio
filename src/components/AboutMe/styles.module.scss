@@ -5,7 +5,7 @@
     margin: auto auto 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 2rem;
 
@@ -31,7 +31,7 @@
             .image {
                 border: 3px solid rgb(156, 104, 180);
                 padding: 2px;
-                width: 400px;
+                width: 450px;
                 object-fit: contain;
                  border-radius: 50%;
 

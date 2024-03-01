@@ -1,0 +1,18 @@
+.container {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .level__container {
+        width: 200px;
+        height: 10px;
+        border: 1px solid black;
+        border-radius: 20px;
+
+        .level {
+            height: 100%;
+            background-color: #9c68b4;
+        }
+    }
+}

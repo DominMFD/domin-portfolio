@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ProfilePicture from '../../../public/fotoPerfil.jpg'
 import styles from './styles.module.scss'
 import AboutMeCard from '../AboutMeCard';
+import SkillsCard from '../SkillsCard';
 
 export default function AboutMe() {
 
@@ -15,9 +16,9 @@ export default function AboutMe() {
               <div className={styles.information}>
                 <AboutMeCard />
               </div>
-              <div>
-                
-              </div>
+            </div>
+            <div>
+              <SkillsCard />
             </div>
         </section>
     )
