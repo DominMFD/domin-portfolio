@@ -3,6 +3,7 @@ import styles from "./page.module.scss";
 import Header from "@/components/Header";
 import Main from "@/components/Main";
 import AboutMe from "@/components/AboutMe";
+import Projects from "@/components/ProjectsSession";
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Main />
         <AboutMe />
+        <Projects />
       </main>
     </AppContextProvider>
   );
