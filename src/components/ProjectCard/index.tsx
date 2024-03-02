@@ -15,7 +15,7 @@ export default function ProjectCard() {
            <div className={styles.information}>
             <h4 className={styles.title}>WebPokedex</h4>
             <div className={styles.tecnologies}>
-                {skillsIcon.Html} {skillsIcon.Css} {skillsIcon.Js}
+                {skillsIcon[0].icon} {skillsIcon[1].icon} {skillsIcon[2].icon}
             </div>
            </div>
         </Link>
