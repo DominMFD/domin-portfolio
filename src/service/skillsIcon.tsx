@@ -6,47 +6,47 @@ export const skillsIcon: TSkill[] = [
     {
       name: 'html',
       level: 70,
-      icon: <BiLogoHtml5 color="#E44D26" size="50px" />
+      icon: <BiLogoHtml5 color="#E44D26" size="30px" />
     },
     {
       name: 'css',
       level: 70,
-      icon: <BiLogoCss3  color="#006BC0" size="50px" />
+      icon: <BiLogoCss3  color="#006BC0" size="30px" />
     },
     {
       name: 'js',
       level: 60,
-      icon: <BiLogoJavascript  color="#F7E018" size="50px" />
+      icon: <BiLogoJavascript  color="#F7E018" size="30px" />
     },
     {
       name: 'ts',
       level: 60,
-      icon: <BiLogoTypescript  color="#2D79C7" size="50px" />
+      icon: <BiLogoTypescript  color="#2D79C7" size="30px" />
     },
     {
       name: 'react',
       level: 55,
-      icon: <BiLogoReact  color="#2D79C7" size="50px" />
+      icon: <BiLogoReact  color="#2D79C7" size="30px" />
     },
     {
       name: 'react native',
       level: 50,
-      icon: <BiLogoReact  color="#2D79C7" size="50px" />
+      icon: <BiLogoReact  color="#2D79C7" size="30px" />
     },
     {
         name: 'angular',
         level: 40,
-        icon: <BiLogoAngular  color="#DE002D" size="50px" />
+        icon: <BiLogoAngular  color="#DE002D" size="30px" />
       },
     {
       name: 'java',
       level: 40,
-      icon: <BiLogoJava color="#F39110" size="50px" />
+      icon: <BiLogoJava color="#F39110" size="30px" />
     },
     {
       name: 'csharp',
       level: 40,
-      icon: <SiCsharp  color="#876CE3" size="50px" />
+      icon: <SiCsharp  color="#876CE3" size="30px" />
     },
 
 ]

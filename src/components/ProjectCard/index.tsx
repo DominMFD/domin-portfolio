@@ -2,9 +2,10 @@ import styles from './styles.module.scss'
 import Image from "next/image";
 import Link from 'next/link';
 import { skillsIcon } from '@/service/skillsIcon';
-import { Projects } from '@/service/projects';
+import { TProjectCard } from './index.type';
+import { url } from 'inspector';
 
-export default function ProjectCard(): JSX.Element {
+export default function ProjectCard({project}: TProjectCard): JSX.Element {
 
     function searchIcon(skills: string[]): JSX.Element[] {
 
@@ -21,14 +22,12 @@ export default function ProjectCard(): JSX.Element {
 
     return (
         <div className={styles.container}>
-        <Link href='https://dominmfd.github.io/WebPokeDex/' target='_blank'>
-            <div className={styles.image__container}>
-               <Image src={Projects[0].image} alt={Projects[0].title} className={styles.image}/>
-            </div>
+        <Link href={project.link} target='_blank'>
+               <Image src={project.image} alt={project.title} className={styles.image}/>
            <div className={styles.information}>
-            <h4 className={styles.title}>{Projects[0].title}</h4>
+            <h4 className={styles.title}>{project.title}</h4>
             <div className={styles.tecnologies}>
-                {searchIcon(Projects[0].skills)}
+                {searchIcon(project.skills)}
             </div>
            </div>
         </Link>

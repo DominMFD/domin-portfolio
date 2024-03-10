@@ -2,7 +2,11 @@
     width: max-content;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
+
+    .icon {
+        transform: scale(1.7);
+    }
 
     .level__container {
         width: 200px;
