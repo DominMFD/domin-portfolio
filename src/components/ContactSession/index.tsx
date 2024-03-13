@@ -1,3 +1,4 @@
+import FormsCard from '../FormsCard'
 import styles from './styles.module.scss'
 
 export default function Contact() {
@@ -10,7 +11,7 @@ export default function Contact() {
                     <p>Tem algo em que eu possa ajudar? entre em contato</p>
                 </div>
                 <div>
-                    
+                    <FormsCard />
                 </div>
             </div>
         </section>
