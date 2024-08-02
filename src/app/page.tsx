@@ -3,6 +3,8 @@ import styles from "./page.module.scss";
 import Nav from "@/components/Nav";
 import HomeContent from "@/components/HomeContent";
 import Header from "@/components/Header";
+import MainContent from "@/components/MainContent";
+import AboutMeContent from "@/components/AboutMeContent";
 
 export default function Home() {
 
@@ -10,7 +12,9 @@ export default function Home() {
     <AppContextProvider>
       <main className={styles.main}>
         <Nav/>
-        <HomeContent />
+        <MainContent>
+          <AboutMeContent />
+        </MainContent>
       </main>
     </AppContextProvider>
   );

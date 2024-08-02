@@ -7,7 +7,7 @@ import { FaJava } from "react-icons/fa";
 
 export default function HomeContent() {
   return (
-    <section className={styles.container}>
+    <article className={styles.container}>
      <div className={styles.content}>
       <div className={styles.header}>
           <h1 className={styles.title}>Prazer, Domindev</h1>
@@ -16,16 +16,16 @@ export default function HomeContent() {
         <Image src={DominImg} alt="Domin no espaço" className={styles.image}/>
       </div>
       <div className={styles.specs}>
-        <SiHtml5 className={styles.icon}/>
-        <SiCss3 className={styles.icon}/>
-        <SiJavascript className={styles.icon}/>
-        <SiTypescript className={styles.icon}/>
-        <SiCsharp className={styles.icon}/>
-        <FaJava className={styles.icon}/>
-        <SiReact className={styles.icon}/>
-        <SiAngular className={styles.icon}/>
-        <SiNodedotjs className={styles.icon}/>
+        <SiHtml5 className={styles.icon} style={{color: '#F06A30', animationDelay: '0s'}}/>
+        <SiCss3 className={styles.icon} style={{color: '#265AEA', animationDelay: '0.2s'}}/>
+        <SiJavascript className={styles.icon} style={{color: '#FFDB44', animationDelay: '0.4s'}}/>
+        <SiTypescript className={styles.icon} style={{color: '#377CC8', animationDelay: '0.6s'}}/>
+        <SiCsharp className={styles.icon} style={{color: '#9981BB', animationDelay: '0.8s'}}/>
+        <FaJava className={styles.icon} style={{color: '#E08916', animationDelay: '0.6s'}}/>
+        <SiReact className={styles.icon} style={{color: '#5DC6DD', animationDelay: '0.4s'}}/>
+        <SiAngular className={styles.icon} style={{color: '#C50836', animationDelay: '0.2s'}}/>
+        <SiNodedotjs className={styles.icon} style={{color: '#8FC708', animationDelay: '0s'}}/>
       </div>
-    </section>
+    </article>
   )
 }
