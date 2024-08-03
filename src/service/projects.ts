@@ -8,7 +8,7 @@ import ValorantPageImage from '../../public/ValorantPage.png';
 import CalculdoraReactImage from '../../public/calculadoraReact.png';
 import { TProjects } from './types/projects.types';
 
-export const Projects: TProjects[] = [
+export const PROJECTS: TProjects[] = [
     {
         title: 'WebPokedex',
         link: 'https://dominmfd.github.io/WebPokeDex/',
