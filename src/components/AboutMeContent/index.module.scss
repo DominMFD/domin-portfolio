@@ -1,7 +1,20 @@
 .container {
   .title {
     font-weight: 500;
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    .text { 
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
   }
 }

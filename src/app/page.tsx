@@ -5,6 +5,8 @@ import HomeContent from "@/components/HomeContent";
 import Header from "@/components/Header";
 import MainContent from "@/components/MainContent";
 import AboutMeContent from "@/components/AboutMeContent";
+import ExperienceContent from "@/components/ExperienceContent";
+import ProjectsContent from "@/components/ProjectsContent";
 
 export default function Home() {
 
@@ -13,7 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <Nav/>
         <MainContent>
-          <AboutMeContent />
+          <ProjectsContent/>
         </MainContent>
       </main>
     </AppContextProvider>

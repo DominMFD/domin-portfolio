@@ -7,7 +7,6 @@ export default function Nav() {
       <ul className={styles.list}>
         <li className={styles.item}>Home</li>
         <li className={styles.item}>Sobre Mim</li>
-        <li className={styles.item}>Experiência</li>
         <li className={styles.item}>Projetos</li>
         <li className={styles.item}>Contatos</li>
       </ul>
