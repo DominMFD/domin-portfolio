@@ -11,7 +11,7 @@ export default function ProjectsContent() {
     <article className={styles.container}>
       <h1 className={styles.title}>Projetos</h1>
       <div className={styles.content}>
-        {PROJECTS.map((project) => <ProjectCard key={project.title} project={project}/> )}
+        <ProjectCard project={PROJECTS[0]}/>
       </div>
     </article>
   )
