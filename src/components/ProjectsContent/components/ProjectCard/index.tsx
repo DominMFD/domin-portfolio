@@ -3,12 +3,11 @@
 import React, { useState, useEffect } from "react";
 import styles from './index.module.scss';
 import Image from "next/image";
-import ImageExample from '../../../../../public/webpokedex.png';
-import { SiCss3, SiHtml5, SiJavascript, SiReact, SiAngular, SiCsharp, SiNodedotjs, SiTypescript } from "react-icons/si";
 import { SlArrowLeft } from "react-icons/sl";
 import Link from "next/link";
 import { TProjectCard } from "./index.types";
 import classNames from "classnames";
+import { skillsIcon } from "@/service/skillsIcon"; 
 
 export default function ProjectCard({ project }: TProjectCard) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -32,9 +31,13 @@ export default function ProjectCard({ project }: TProjectCard) {
           <div className={styles.header}>
             <span className={styles.title}>{project.title}</span>
             <div className={styles.specs}>
-              <SiHtml5 style={{ color: '#F06A30', width: '30px' }} />
-              <SiCss3 style={{ color: '#265AEA', width: '30px' }} />
-              <SiJavascript style={{ color: '#FFDB44', width: '30px' }} />
+             {project.skills.map((skill) => {
+              let icon;
+              skillsIcon.forEach((skillIcon) => {
+                if(skillIcon.name === skill) icon = skillIcon.icon;
+              })
+              return icon;
+             })}
             </div>
           </div>
           <div className={styles.description}>
