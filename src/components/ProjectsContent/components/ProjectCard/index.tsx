@@ -21,7 +21,7 @@ export default function ProjectCard({ project }: TProjectCard) {
   return (
     <div className={styles.container}>
       <div className={classNames(styles.image, { [styles.open]: isOpen})}>
-        <Image src={project.image} alt="image example" />
+        <Image src={project.image} alt="image example" layout="fill" objectFit="cover" />
       </div>
       <div className={styles.info}>
         <div className={classNames(styles.wrapper, { [styles.open]: isOpen, [styles.close]: shouldAnimate && !isOpen })} onClick={handleOpen}>
