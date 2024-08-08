@@ -1,6 +1,6 @@
 import AppContextProvider from "@/components/AppContext/AppContext";
 import styles from "./page.module.scss";
-import Nav from "@/components/Nav";
+import Nav from "@/components/Header";
 import HomeContent from "@/components/HomeContent";
 import Header from "@/components/Header";
 import MainContent from "@/components/MainContent";
@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <AppContextProvider>
       <main className={styles.main}>
-        <Nav/>
         <MainContent>
           <ProjectsContent/>
         </MainContent>

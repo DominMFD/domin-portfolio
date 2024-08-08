@@ -1,6 +1,31 @@
 .container {
   width: 100%;
-  max-width: 1500px;
-  height: 100px;
-  margin: auto;
+  height: 62px;
+  padding: 12px 21px;
+  box-shadow: 2px 3px 12.9px 0px #5C5CA01A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .left {
+
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+      color: #62287C;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .mobile {
+    position: absolute;
+    right: 0;
+    top: 65px;
+  }
 }
