@@ -12,11 +12,7 @@ export default function Home() {
 
   return (
     <AppContextProvider>
-      <main className={styles.main}>
-        <MainContent>
-          <ProjectsContent/>
-        </MainContent>
-      </main>
+      <HomeContent />
     </AppContextProvider>
   );
 }
