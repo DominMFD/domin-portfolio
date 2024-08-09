@@ -8,24 +8,108 @@
   align-items: center;
   position: relative;
 
-  .left {
-
+  .logo {
+    width: 100%;
   }
 
-  .right {
+  .nav {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 749px) {
+      
+    }
+
     .icon {
       color: #62287C;
       width: 35px;
       height: 35px;
+      z-index: 2;
+
+      @media screen and (min-width: 749px) {
+        display: none;
+      }
     }
   }
 
   .mobile {
     position: absolute;
-    right: 0;
-    top: 65px;
+    right: 1rem;
+    top: 68px;
+
+    @media screen and (min-width: 749px) {
+      width: 100%;
+      position: relative;
+      opacity: 1;
+      inset: 0;
+    }
+
+    &.open {
+      opacity: 1;
+      animation: navOpenAnimation .5s ease-in;
+
+      @media screen and (min-width: 749px) {
+        animation: none;
+      }
+    }
+
+    &.close {
+      opacity: 0;
+      animation: navCloseAnimation .5s ease-in forwards;
+
+      @media screen and (min-width: 749px) {
+        opacity: 1;
+        animation: none;
+      }
+    }
+ }
+
+ .socials {
+  display: none;
+
+  .link {
+    padding: .4rem .4rem 0.2rem;
+    border-radius: 99999999999%;
+    color: rgb(32, 30, 30);
+    transition: all .2s ease-in;
+
+    &:hover {
+      background-color: #61287c3d;
+      
+    }
+  }
+
+  @media screen and (min-width: 749px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.2rem;
+  }
+ }
+}
+
+@keyframes navOpenAnimation {
+  from {
+    transform: translateY(-2.5rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes navCloseAnimation {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-2.5rem);
+    opacity: 0;
   }
 }
